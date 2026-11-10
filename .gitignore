@@ -1,0 +1,18 @@
+# Data (download from Kaggle, see README)
+data/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editor / OS
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Windows download metadata
+*:Zone.Identifier
