@@ -1,5 +1,7 @@
-# Data (download from Kaggle, see README)
-data/
+# Data: raw CSVs are committed (Kaggle download, Nov 2026 version).
+# Processed files are rebuilt by notebooks/01_build_dataset.ipynb.
+data/processed/
+data/archive.zip
 
 # Python
 .venv/
