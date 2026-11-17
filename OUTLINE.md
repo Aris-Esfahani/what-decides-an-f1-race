@@ -1,3 +1,10 @@
+**Progress** (updated 2026-11-17)
+
+* Setup: ✅ done. Dataset built in `notebooks/01_build_dataset.ipynb`.  
+* Part 1: ✅ done. 1.1–1.4 in `notebooks/02_explore.ipynb` (4 charts, each with a takeaway).  
+* Part 2: ⬜ next. Start 2.1 (Monaco) in a new notebook, `notebooks/03_test_claims.ipynb`.  
+* Parts 3–4: ⬜ not started.
+
 **Part 1: Explore (Level 1\)**  
  *Goal: describe what’s happened, using charts and tables.*
 
