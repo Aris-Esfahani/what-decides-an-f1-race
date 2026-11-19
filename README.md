@@ -43,6 +43,7 @@ The full answer, limitations and next steps are in [`notebooks/05_conclusions.ip
 | [`03_test_claims`](notebooks/03_test_claims.ipynb) | Part 2 | Shuffle tests of four popular claims, with a findings table |
 | [`04_predict`](notebooks/04_predict.ipynb) | Part 3 | A linear model vs. "finish = grid", feature importance, where the model fails |
 | [`05_conclusions`](notebooks/05_conclusions.ipynb) | Part 4 | The answer, limitations and next steps |
+| [`06_predict_race`](notebooks/06_predict_race.ipynb) | Extra | Type in a race's starting grid and get the model's predicted finishing order |
 
 The plan and progress are in [`OUTLINE.md`](OUTLINE.md).
 
