@@ -11,7 +11,13 @@ A beginner data-science project on Formula 1 results from 1950 to 2026. It explo
 - **The driver's own form adds only a little** once the grid and the team are known.
 - **The popular stories barely matter.** Grid position isn't more important at Monaco, pit stops haven't gotten faster overall, the home crowd helps in qualifying but not in the race, and track specialists exist but the effect is small.
 
+![Grid vs. finish position by decade: since the 1990s the dots hug the diagonal, so most finishers end up close to where they started](images/grid_vs_finish.png)
+*Grid vs. finish position by decade (Part 1.4). The closer the dots sit to the dashed line, the more the finish follows the grid.*
+
 The model beats "finish = grid" across the whole field (2.28 places off against 2.49 on the 2023–2026 races), but not at the front: its pick won 56 of 89 races, against 54 for the pole sitter. Who wins among the front-runners comes down to things this data doesn't capture.
+
+![Feature importance: scrambling grid adds about 2 places of error, team form 0.74, driver form 0.15, and street, home and track history nothing](images/feature_importance.png)
+*What the model relies on (Part 3.5): how many places worse its predictions get when each feature is scrambled.*
 
 The full answer, limitations and next steps are in [`notebooks/05_conclusions.ipynb`](notebooks/05_conclusions.ipynb).
 
@@ -44,10 +50,12 @@ The plan and progress are in [`OUTLINE.md`](OUTLINE.md).
 
 1. Create a virtual environment and install the packages: `python -m venv .venv`, then `.venv/bin/pip install -r requirements.txt`.
 2. Run `01_build_dataset.ipynb` first. It builds `data/processed/results_joined.csv`, which isn't stored in git.
-3. Run the other notebooks in order.
-
-The notebooks read data from absolute paths under `/home/aris/projects/F1-Analysis/`. Change those if the repo lives somewhere else.
+3. Run the other notebooks in order. They read data with paths relative to the `notebooks/` folder (`../data/...`), so they work wherever the repo is cloned.
 
 ## Data
 
-The F1 results dataset from Kaggle (November 2026 download), stored as CSVs in `data/raw/`.
+[Formula 1 World Championship (1950 - 2026)](https://www.kaggle.com/datasets/samuelpombourcq/formula-1-world-championship-1950-2026) by Samuel_Pbq on Kaggle, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). The copy in `data/raw/` was downloaded in November 2026, covers races up to the 2026 Mexico City Grand Prix, and is unchanged. It's shared here under the same license.
+
+## How this was made
+
+I built this project with help from Claude Code, Anthropic's AI coding assistant. It helped write the code and draft parts of the written analysis. I planned the project, made the analysis choices, ran every notebook, and reviewed the results and conclusions.
