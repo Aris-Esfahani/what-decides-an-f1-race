@@ -4,7 +4,7 @@
 * Part 1: ✅ done. 1.1–1.4 in `notebooks/02_explore.ipynb` (4 charts, each with a takeaway).  
 * Part 2: ✅ done. 2.1–2.4 in `notebooks/03_test_claims.ipynb` (4 shuffle tests, each with a takeaway, plus a findings table at the end).  
 * Part 3: ✅ done. 3.1–3.5 in `notebooks/04_predict.ipynb` (a linear model vs. "finish = grid" on 2023–2026, a luck test, a feature-importance chart, and where the model fails).  
-* Part 4: ⬜ next. Answer the title question, then limitations and next steps.
+* Part 4: ✅ done. The answer, limitations and next steps in `notebooks/05_conclusions.ipynb`, with a summary in `README.md`.
 
 **Part 1: Explore (Level 1\)**  
  *Goal: describe what’s happened, using charts and tables.*
