@@ -59,4 +59,4 @@ The plan and progress are in [`OUTLINE.md`](OUTLINE.md).
 
 ## How this was made
 
-I built this project with help from Claude Code, Anthropic's AI coding assistant. It helped write the code and draft parts of the written analysis. I planned the project, made the analysis choices, ran every notebook, and reviewed the results and conclusions.
+I built this project with help from Claude Code. It helped write the code and draft parts of the written analysis. I planned the project, made the analysis choices, ran every notebook, and reviewed the results and conclusions.
