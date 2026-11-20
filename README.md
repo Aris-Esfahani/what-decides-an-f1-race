@@ -9,14 +9,14 @@ A beginner data-science project on Formula 1 results from 1950 to 2026. It explo
 - **The grid comes first.** Finishing order follows starting order more closely than ever (a grid-to-finish link of 0.70–0.77 since the 1990s). It's by far the model's most useful feature.
 - **The car comes second.** Since 2000, the top team of each decade has won 47–49% of that decade's races, and team form is the model's next most useful feature.
 - **The driver's own form adds only a little** once the grid and the team are known.
-- **The popular stories barely matter.** Grid position isn't more important at Monaco, pit stops haven't gotten faster overall, the home crowd helps in qualifying but not in the race, and track specialists exist but the effect is small.
+- **The popular stories barely matter.** Grid position isn't more important at Monaco, pit stops haven't gotten faster overall, the home crowd helps in qualifying but not in the race, and there's no clear sign of track specialists.
 
 ![Grid vs. finish position by decade: since the 1990s the dots hug the diagonal, so most finishers end up close to where they started](images/grid_vs_finish.png)
 *Grid vs. finish position by decade (Part 1.4). The closer the dots sit to the dashed line, the more the finish follows the grid.*
 
-The model beats "finish = grid" across the whole field (2.28 places off against 2.49 on the 2023–2026 races), but not at the front: its pick won 56 of 89 races, against 54 for the pole sitter. Who wins among the front-runners comes down to things this data doesn't capture.
+The full model beats "finish = grid" across the whole field (2.28 places off against 2.49 on the 2023–2026 races), but not at the front: its pick won 56 of 89 races, against 54 for the pole sitter. Who wins among the front-runners comes down to things this data doesn't capture.
 
-![Feature importance: scrambling grid adds about 2 places of error, team form 0.74, driver form 0.15, and street, home and track history nothing](images/feature_importance.png)
+![Feature importance: scrambling grid adds about 2 places of error, team form 0.76, driver form 0.15, and street, home and track history nothing](images/feature_importance.png)
 *What the model relies on (Part 3.5): how many places worse its predictions get when each feature is scrambled.*
 
 The full answer, limitations and next steps are in [`notebooks/05_conclusions.ipynb`](notebooks/05_conclusions.ipynb).
@@ -30,7 +30,7 @@ The full answer, limitations and next steps are in [`notebooks/05_conclusions.ip
 | Does grid position matter more at Monaco? | No: a link of 0.64 at Monaco against 0.65 elsewhere |
 | Have pit stops gotten faster? | No, not in total time lost in the pit lane (2011–2026) |
 | Is there a home advantage? | Partly: drivers start 0.23 places higher at home, but don't finish any better |
-| Are there track specialists? | Yes, but the effect is small and mostly luck |
+| Are there track specialists? | No clear sign: results at a track are about as spread out as luck alone makes them |
 | Can a model beat "finish = grid"? | Slightly: 0.2 places closer per driver (not luck), with no gain at the front |
 | What does the model rely on? | Grid position, then team form, then a little driver form |
 
