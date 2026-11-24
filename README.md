@@ -49,13 +49,18 @@ The plan and progress are in [`OUTLINE.md`](OUTLINE.md).
 
 ## Running it
 
-1. Create a virtual environment with Python 3.14 and install the packages: `python -m venv .venv`, then `.venv/bin/pip install -r requirements.txt`.
+1. Create a virtual environment with Python 3.14 and install the packages: `python3 -m venv .venv`, then `.venv/bin/pip install -r requirements.txt`.
 2. Run `01_build_dataset.ipynb` first. It builds `data/processed/results_joined.csv`, which isn't stored in git.
 3. Run the other notebooks in order. They read data with paths relative to the `notebooks/` folder (`../data/...`), so they work wherever the repo is cloned.
 
 ## Data
 
-[Formula 1 World Championship (1950 - 2026)](https://www.kaggle.com/datasets/samuelpombourcq/formula-1-world-championship-1950-2026) by Samuel_Pbq on Kaggle, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). The copy in `data/raw/` was downloaded in November 2026, covers races up to the 2026 Mexico City Grand Prix, and is unchanged. It's shared here under the same license.
+[Formula 1 World Championship (1950 - 2026)](https://www.kaggle.com/datasets/samuelpombourcq/formula-1-world-championship-1950-2026) by Samuel_Pbq on Kaggle, licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/). The copy in `data/raw/` was downloaded in November 2026, covers races up to the 2026 Mexico City Grand Prix, and is unchanged. It's shared here under the same license. The Kaggle dataset is built from [Jolpica-F1](https://github.com/jolpica/jolpica-f1), the community successor of the [Ergast Developer API](https://ergast.com/mrd/).
+
+## License
+
+- **Code:** the code in the notebooks is under the [MIT License](LICENSE).
+- **Data and results:** the data in `data/raw/`, and everything made from it (the charts in `images/`, the tables and numbers in the notebook outputs, and `data/processed/`), are under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), the same license as the dataset. You can reuse them for non-commercial work if you credit the source and share what you make under the same license.
 
 ## How this was made
 
