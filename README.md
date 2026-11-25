@@ -29,7 +29,7 @@ The full answer, limitations and next steps are in [`notebooks/05_conclusions.ip
 | Do retirements still shake up races? | Much less: 48% of starters retired in the 1950s, 12% in the 2020s |
 | Does grid position matter more at Monaco? | No: a link of 0.79 at Monaco against 0.78 elsewhere |
 | Have pit stops gotten faster? | No, not in total time lost in the pit lane (2011–2026) |
-| Is there a home advantage? | Partly: drivers start 0.25 places higher at home, but don't finish any better |
+| Is there a home advantage? | Partly: drivers start about 0.4 places higher at home, but don't finish any better |
 | Are there track specialists? | No clear sign: results at a track are about as spread out as luck alone makes them |
 | Can a model beat "finish = grid"? | Slightly: 0.2 places closer per driver over 2023–2026 (not luck), but the edge shrank every season and there's no gain at the front |
 | What does the model rely on? | Grid position, then team form, then a little driver form |
